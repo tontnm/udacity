@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: udagram-reverseproxy
-          image: tontnm/udagram-reverseproxy
+          image: reverseproxy
           ports:
             - containerPort: 80
