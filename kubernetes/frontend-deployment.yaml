@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: udagram-frontend
-        image: tontnm/udagram-frontend
+        image: tontnm/udagram-frontend:v5
         ports:
         - containerPort: 80
