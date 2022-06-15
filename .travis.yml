@@ -29,4 +29,4 @@ after_success:
   - docker push tontnm/udagram-frontend:v5
   - docker push tontnm/udagram-api-feed:v5
   - docker push tontnm/udagram-api-user:v5
-  - docker push tontnm/udagram-reverseproxy:v1
+  - docker push tontnm/udagram-reverseproxy:v5
