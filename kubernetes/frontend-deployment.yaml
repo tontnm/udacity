@@ -5,7 +5,7 @@ metadata:
   labels:
     app: udagram-frontend
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: udagram-frontend
@@ -15,13 +15,14 @@ spec:
         app: udagram-frontend
     spec:
       containers:
-      - name: udagram-frontend
-        image: tontnm/udagram-frontend:v5
-        ports:
-        - containerPort: 80
-        requests:
-            memory: "64Mi"
-            cpu: "250m"
-          limits:
-            memory: "2048Mi"
-            cpu: "500m"
+        - name: udagram-frontend
+          image: tontnm/udagram-frontend:v5
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "250m"
+            limits:
+              memory: "2048Mi"
+              cpu: "500m"
