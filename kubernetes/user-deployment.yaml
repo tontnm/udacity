@@ -19,3 +19,9 @@ spec:
           image: tontnm/udagram-api-user:v5
           ports:
             - containerPort: 80
+          requests:
+            memory: "64Mi"
+            cpu: "250m"
+          limits:
+            memory: "2048Mi"
+            cpu: "500m"
