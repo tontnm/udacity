@@ -1,12 +1,11 @@
 apiVersion: v1
 kind: ConfigMap
 data:
-  AWS_BUCKET: cdr
+  AWS_BUCKET: cdr-tontnm
   AWS_PROFILE: default
-  AWS_REGION: us-west-2
+  AWS_REGION: us-west-1
   JWT_SECRET: hi
   POSTGRES_DB: postgres
-  POSTGRES_PW: postgres
   POSTGRES_HOST: cdr.c3jmiyfm9lph.us-west-2.rds.amazonaws.com
   URL: http://localhost:8100
 metadata:
